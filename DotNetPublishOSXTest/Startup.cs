@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
+
 namespace DotNetPublishOSXTest
 {
     public class Startup
@@ -37,6 +38,7 @@ namespace DotNetPublishOSXTest
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+  
             app.UseMvc();
         }
     }
